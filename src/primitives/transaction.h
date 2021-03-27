@@ -7,6 +7,11 @@
 #ifndef BITCOIN_PRIMITIVES_TRANSACTION_H
 #define BITCOIN_PRIMITIVES_TRANSACTION_H
 
+// *** MARKER *** Placed here to quell deprecation warnings -Theron Sat Mar 27 13:21:47 MDT 2021
+#ifdef __APPLE__
+#define BOOST_BIND_GLOBAL_PLACEHOLDERS
+#endif
+
 #include <stdint.h>
 #include "amount.h"
 #include "script/script.h"
