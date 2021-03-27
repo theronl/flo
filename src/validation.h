@@ -7,6 +7,11 @@
 #ifndef BITCOIN_VALIDATION_H
 #define BITCOIN_VALIDATION_H
 
+// *** MARKER *** Placed here to quell deprecation warnings -Theron Sat Mar 27 13:21:47 MDT 2021
+#ifdef __APPLE__
+#define BOOST_BIND_GLOBAL_PLACEHOLDERS
+#endif
+
 #if defined(HAVE_CONFIG_H)
 #include "config/bitcoin-config.h"
 #endif
